@@ -19,7 +19,7 @@ export default function Welcome() {
 
             <img src={background} className='welcome-background'></img>
 
-            <h1>Même les héros du quotidien ont besoin de leur Alfred !</h1>
+            <h1>Même les héros du quotidien ont besoin de leur Alfred ! Test123</h1>
 
             <p>On s'occupe de ta lessive ! Notre application bientôt disponible</p>
 

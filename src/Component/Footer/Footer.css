@@ -1,0 +1,155 @@
+/***Component footer***/
+.component-footer{
+    min-height: 20vh;
+    display: flex;
+    padding-top: 2%;
+    position: relative;
+}
+
+.component-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background-color: black;
+}
+
+/*Div*/
+.component-footer > div{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Img*/
+.component-footer img{
+    display: block;
+    margin: auto;
+    width: 40%;
+    height: fit-content;
+}
+
+/*Title*/
+.component-footer h3{
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+/*Item*/
+.footer-item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+/*Div footer*/
+.footer-item > div{
+    display: flex;
+    gap: 10%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Link*/
+.footer-item a{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.footer-item a:hover{
+    color: #38B6FF;
+}
+
+
+/*Company*/
+.footer-company{
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*****Mobile view*****/
+@media only screen and (max-width: 1400px) {
+    /*item*/
+    .footer-item{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    /*Img*/
+    .component-footer img{
+        width: 60%;
+        height: fit-content;
+    }
+
+    /*Div*/
+    .footer-item > div{
+        display: flex;
+        gap: 5%;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    /*Component footer*/
+    .component-footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 10% 0;
+    }
+
+    .component-footer::before {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*Item*/
+    .footer-item{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    /*Div*/
+    .component-footer > div {
+        width: 80%;
+    }
+
+    /*Img*/
+    .component-footer img {
+        width: 50%;
+    }
+
+
+}

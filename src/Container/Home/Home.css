@@ -1,0 +1,102 @@
+/***Container home***/
+.container-home{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: #F5F5F5;
+}
+
+/*Div welcome*/
+.welcome{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: 100% 100%;
+}
+
+/*Div concept*/
+.concept{
+    position: relative;
+
+}
+
+/*Div contact*/
+.contact{
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/***Background***/
+.concept-back-one{
+    position: absolute;
+    width: 30%;
+    top: 0;
+    right: -15%;
+}
+
+.concept-back-two{
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    left: -10%;
+}
+
+.concept-back-three{
+    position: absolute;
+    width: 30%;
+    top: 60%;
+    right: -17%;
+}
+
+.concept-back-four{
+    position: absolute;
+    width: 30%;
+    top: 10%;
+    right: -17%;
+}
+
+.concept-back-five{
+    position: absolute;
+    width: 20%;
+    top: 15%;
+    left: -10%;
+}
+
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  .fade-in {
+	-webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }

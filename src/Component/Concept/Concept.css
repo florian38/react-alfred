@@ -1,0 +1,367 @@
+/***Component concept***/
+.component-concept{
+    min-height: 200vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*Span*/
+.component-concept span{
+    font-weight: 600;
+    color: black;
+}
+
+/*Title*/
+.component-concept h1{
+    margin: 5% 0 1%;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Caveat';
+}
+
+/*Paragraph*/
+.concept-slogan{
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    font-size: 1rem;
+    text-align: center;
+    color: grey;
+}
+
+/***Step div***/
+.concept-div{
+    display: flex;
+    margin: 5% auto;
+    width: 60%;
+    position: relative;
+}
+
+/*div img*/
+.concept-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2%;
+    width: 50%;
+    background-size: 100% 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.concept-img img{
+    width: 90%;
+    border-radius: 5px;
+}
+
+/*Citation*/
+.concept-cit{
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: -5%;
+    background-color: #F5F5F5;
+    padding: 2%;
+    width: 80%;
+    -webkit-box-shadow: 5px 4px 7px 2px rgba(163,163,163,0.53); 
+    box-shadow: 5px 4px 7px 2px rgba(163,163,163,0.53);
+    border-radius: 5px;
+    color: grey;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+}
+
+
+/*Content*/
+.concept-content{
+    width: 50%;
+}
+
+/*Step*/
+.concept-step{
+    font-family: 'Montserrat';
+    margin: 0 5%;
+    font-size: 0.9rem;
+    color: black;
+    display: inline-flex;
+    padding: 2% 5%;
+    background-color: #38B6FF;
+    border-radius: 5px;
+}
+
+/*Title*/
+.concept-content h3{
+    font-family: 'Caveat';
+    margin: 5%;
+    font-size: 2.5rem;
+    color: black;
+}
+
+/*Text*/
+.concept-text{
+    margin: 0 5%;
+    font-family: 'Montserrat';
+    text-align: justify;
+    color: grey;
+    line-height: 2rem;
+}
+
+/*Div one step*/
+.concept-one-step{
+    margin: 0 0 0 25%;
+    font-family: 'Montserrat';
+    color: grey;
+}
+
+.concept-one-step p{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+
+}
+
+/*Div two Arg*/
+.concept-arg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    font-family: 'Montserrat';
+    border-radius: 5px;
+    margin: 7% 5% 0;
+    padding: 3%;
+    background-color: transparent;
+    color: grey;
+}
+
+/*Div three content*/
+.concept-third-content{
+    display: flex;
+    justify-content: center;
+    margin: 5% 0 0;
+    gap: 5%;
+}
+
+.concept-third-arg{
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    gap: 5%;
+    border-radius: 5px;
+    padding: 2%;
+    color: grey;
+}
+
+
+/*****Mobile view*******/
+@media only screen and (max-width: 1600px) {
+    /*Div concept*/
+    .concept-div{
+        display: flex;
+        margin: 8% auto;
+        width: 70%;
+        position: relative;
+    }
+    
+    /*Citation*/
+    .concept-cit {
+        position: absolute;
+        bottom: -5%;
+        padding: 3% 5%;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    /*Title*/
+    .concept-content h3 {
+        font-size: 2rem;
+    }
+
+    /*Text*/
+    .concept-text {
+        font-size: 0.9rem;
+    }
+
+    /*Img*/
+    .concept-img{
+        width: 45%;
+    }
+
+    /*Div one*/
+    .concept-one-step {
+        font-size: 0.9rem;
+    }
+
+    /*Div two*/
+    .concept-arg {
+        font-size: 0.9rem;
+    }
+    
+    /*Div three*/
+    .concept-third-arg{
+        font-size: 0.9rem;
+        width: 50%;
+        gap: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    /*Div concept*/
+    .concept-div{
+        display: flex;
+        margin: 10% auto;
+        width: 80%;
+        position: relative;
+    }
+     
+}
+
+@media only screen and (max-width: 1000px) {
+    /*Title Component*/
+    .component-concept h1 {
+        font-size: 3.5rem;
+    }
+    
+    /*Slogan Componant*/
+    .concept-slogan {
+        font-size: 0.9rem;
+    }
+    
+    /*Step*/
+    .concept-step {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    /*Div step*/
+    .concept-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /*Mobile div step*/
+    .concept-mobile{
+        flex-direction: column-reverse !important;
+    }
+
+    /*Img*/
+    .concept-img{
+        height: 30vh;
+        width: 60%;
+    }
+ 
+    /*Content*/
+    .concept-content{
+        margin-bottom: 10%;
+        width: 90%;
+    }
+     
+}
+
+@media only screen and (max-width: 800px) {
+    
+    /*Img*/
+    .concept-img{
+        height: 30vh;
+        width: 75%;
+    }
+
+    /*Background*/
+    .concept-back-one {
+        position: absolute;
+        width: 30%;
+        top: 5%;
+        right: -15%;
+    }
+  
+}
+
+@media only screen and (max-width: 650px) {
+    
+    /*Title Component*/
+    .component-concept h1 {
+        font-size: 2.5rem;
+    }
+    
+    /*Slogan*/
+    .concept-slogan {
+        font-size: 0.9rem;
+    }
+
+    /*Concept img*/
+    .concept-img{
+        height: 30vh;
+        width: 95%;
+    }
+
+    /*Div three*/
+    .concept-third-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .concept-third-arg {
+        display: flex;
+        justify-content: start;
+        gap: 5%;
+        width: 50%;
+    }
+  
+}
+
+@media only screen and (max-width: 500px) {
+    
+    /*Title component*/
+    .component-concept h1 {
+        font-size: 2.5rem;
+    }
+    
+    /*Slogan component*/
+    .concept-slogan {
+        font-size: 0.8rem;
+    }
+
+    /*Div concept text*/
+    .concept-text{
+        font-size: 0.8rem;
+    }
+        
+    /*Citation*/
+    .concept-cit{
+        font-size: 0.8rem;
+    }
+
+    /*Div one*/
+    .concept-one-step {
+        margin: 0;
+    }
+
+    .concept-one-step p {
+        font-size: 0.8rem;
+    }
+    
+    /*Div three*/
+    .concept-third-arg{
+        width: 80%;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /*Background img*/
+    .concept-back-one {
+        position: absolute;
+        width: 30%;
+        top: 10%;
+        right: -15%;
+    }
+}

@@ -1,0 +1,210 @@
+/***Component concept***/
+.component-contact{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Title*/
+.component-contact h1{
+    margin: 1% 0 1%;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Caveat';
+}
+
+/*Form*/
+.component-contact form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0;
+}
+
+/*Input*/
+.contact-input{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.contact-input input{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    width: 20%;
+    height: 2.5rem;
+    background-color: transparent;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    outline: none;
+}
+
+/*Message*/
+.contact-message {
+    margin: 5% 5% 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-message textarea{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    width: 50%;
+    background-color: transparent;
+    height: 10rem;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    outline: none;
+    resize: none;
+}
+
+/*Button*/
+.contact-button{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.component-contact button{
+    display: block;
+    padding: 0.5% 5%;
+    border: none;
+    background-color: #38B6FF;
+    border-radius: 2px;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.component-contact button:active{
+    transform: scale(0.95);
+}
+
+/*Message after send*/
+.contact-send{
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    color: grey;
+}
+
+ /*****Mobile view******/
+@media only screen and (max-width: 1400px) {
+
+    /*Component title*/
+    .component-contact h1{
+        margin: 4% 0 1%;
+    }
+
+    /*Form*/
+    .component-contact form{
+        margin-top: 8%;
+    }
+
+    /*Input*/
+    .contact-input input{
+        width: 30%;
+    }
+
+    /*TextArea*/
+    .contact-message textarea{
+        width: 70%;
+    }
+
+    /*Button*/
+    .component-contact button{
+        padding: 1% 5%;
+        border-radius: 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+
+    /*Component Title*/
+    .component-contact h1{
+        margin: 8% 0 1%;
+    }
+
+    /*Form*/
+    .component-contact form{
+        margin-top: 10%;
+    }
+
+
+    
+}
+
+
+@media only screen and (max-width: 750px) {
+    /*Input*/
+    .contact-input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .contact-input input{
+        width: 70%;
+    }
+
+    /*Message*/
+    .contact-message {
+        margin: 10% 0 5%;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+    /*Message*/
+    .contact-message {
+        margin: 10% 0 10%;
+    }
+
+    /*Button*/
+    .component-contact button{
+        padding: 1% 5%;
+        border-radius: 5px;
+    }
+
+    /*Background img*/
+    .concept-back-four {
+        position: absolute;
+        width: 30%;
+        top: 20%;
+        right: -17%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /*Component title*/
+    .component-contact h1{
+        font-size: 2.5rem;
+    }
+
+    /*Input*/
+    .contact-input input{
+        font-size: 0.9rem;
+    }
+
+    /*TextArea*/
+    .contact-message textarea{
+        font-size: 0.9rem;
+    }
+
+    /*Button*/
+    .component-contact button{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /*Form*/
+    .component-contact form {
+        margin: 5% 0 15%;
+    }
+}

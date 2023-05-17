@@ -1,5 +1,5 @@
 //Import React and function
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 //Import style
 import './Home.css'
@@ -17,6 +17,16 @@ import background from '../../Data/img/backtest2.png'
 
 
 export default function Home() {
+
+    //Hook for loading
+    const [loading, setLoading] = useState(false)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(true)
+        }, 1000);
+    }, [])
+        
 
     //Variable for div animate
     const animateDiv = (div) => {
@@ -43,8 +53,10 @@ export default function Home() {
     return (
         <div className='container-home'>
             <div className='welcome'> 
-                <Navbar/>
+            <Navbar/>
+            { loading &&
                 <Welcome/>
+            }
             </div>
         
             <div className='concept' id='concept'>

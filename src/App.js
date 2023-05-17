@@ -9,20 +9,9 @@ import './App.css';
 
 function App() {
 
-    //Hook for loading
-    const [loading, setLoading] = useState(false)
-
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(true)
-        }, 1000);
-    }, [])
-    
     return (
         <div className="App">
-            { loading &&
-                <Home />
-            }
+            <Home />
         </div>
   );
 }

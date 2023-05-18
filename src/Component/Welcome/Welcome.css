@@ -289,3 +289,37 @@
     }
 }
 
+@media screen and (orientation: landscape) and (max-width: 1200px) {
+    /*Img*/
+    .welcome-background3{
+        position: absolute;
+        bottom: 22%;
+        left: 60%;
+        height: calc(60%);
+    }
+
+    /*Paragraph*/
+    .component-welcome p{
+        position: absolute;
+        top: 75%;
+        left: 55%;
+        transform: translate(0, 0); /* décalage de 50% de sa propre taille */
+        font-family: 'Montserrat';
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    /*App*/
+    .welcome-content {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 90%;
+        left: 76%;
+        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+        width: 30%;
+        gap: 10%;
+    }
+
+  }
+

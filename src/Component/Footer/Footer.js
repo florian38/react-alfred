@@ -22,8 +22,8 @@ export default function Footer() {
             <div>
                 <h3>Contact</h3>
                 <div className='footer-item'>
-                    <p>06.06.06.06.07</p>
-                    <p>contact@alfred.fr</p>
+                    <p>06.04.03.23.78</p>
+                    <p>contact@monalfred.fr</p>
                 </div>
             </div>
 

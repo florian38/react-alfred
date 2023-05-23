@@ -168,6 +168,30 @@
     }
 }
 
+@media screen and (orientation: landscape) and (max-width: 1000px) {
+    /*Left navbar*/
+    .navbar-left {
+        display: flex;
+        width: 50px;
+    }
+
+    /*Div in hamburger*/
+    .hamburger-react > div{
+        width: 30px !important;
+    }
+
+    /*Mobile*/
+    .navbar-mobile {
+        height: 90vh;
+    }
+
+    /*Link*/
+    .navbar-mobile a {
+        font-size: 1.2rem;
+    }
+}
+
+
 
   /**
  * ----------------------------------------

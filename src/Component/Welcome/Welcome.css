@@ -323,3 +323,54 @@
 
   }
 
+
+  @media screen and (orientation: landscape) and (max-width: 1000px) {
+    /*Background img*/
+    .welcome-background{
+        position: absolute;
+        bottom: 0%;
+        left: -15%;
+        width: 25%;
+    }
+
+    /*Title*/
+    .component-welcome h1 {
+        font-size: 2rem;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        width: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*Img*/
+    .welcome-background3 {
+        display: none;
+    }
+
+    /*Paragraph*/
+    .component-welcome p {
+        position: absolute;
+        font-size: 0.8rem !important;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat';
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /*Content App*/
+    .welcome-content {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*Img App*/
+    .welcome-later {
+        width: 90% !important;
+    }
+
+  }
+
+

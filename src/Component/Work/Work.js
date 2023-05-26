@@ -20,7 +20,7 @@ export default function Work() {
         <div className='component-work'>
             <h1>Suivez nous !</h1>
             <p className='concept-slogan'><RiDoubleQuotesR size={20} fill={'#38B6FF'}/>La galerie de notre excellent travail !<RiDoubleQuotesR size={20} fill={'#38B6FF'}/></p>
-            <div className='work-pic fade-in-target'>
+            <div className='work-pic'>
                 <img src={pic1} className='pic-one '/>
                 <img src={pic2} className='pic-two'/>
                 <img src={pic3} className='pic-three'/>

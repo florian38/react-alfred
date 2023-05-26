@@ -50,22 +50,25 @@
 .work-app{
     position: absolute;
     background-color: #F5F5F5;
-    padding: 0.2% 1%;
+    padding: 0.5% 2%;
     font-family: 'Montserrat';
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+    border-radius: 5px;
+    box-shadow: 5px 4px 7px 2px rgba(163,163,163,0.53);
 }
 
 .work-icon{
     margin-right: 10%;
+    fill: black !important;
 }
 
 /*Link*/
 .work-link{
     text-decoration: none;
-    color: grey;
+    color: black;
 }
 
 .work-link:hover{
@@ -97,19 +100,19 @@
     }
 
     .pic-one{
-        transform: translateY(-10%);
+        transform: translateY(0%);
     }
     
     .pic-two{
-        transform: translateY(10%);
+        transform: translateY(0%);
     }
     
     .pic-three{
-        transform: translateY(-10%);
+        transform: translateY(0%);
     }
     
     .pic-four{
-        transform: translateY(10%);
+        transform: translateY(0%);
     }
 
     /*App*/
@@ -142,7 +145,7 @@
     /*Img*/
     .work-pic img {
         width: 100%;
-        height: calc(60%);
+        height: calc(70%);
         display: block;
         margin: auto;
     }
@@ -153,11 +156,12 @@
     /*Component title*/
     .component-work h1{
         font-size: 2.5rem;
+        margin-bottom: 5%;
     }
     
     /*App*/
     .work-app{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
 }

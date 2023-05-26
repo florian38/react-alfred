@@ -184,6 +184,7 @@
     /*Component title*/
     .component-contact h1{
         font-size: 2.5rem;
+        margin-bottom: 5%;
     }
 
     /*Input*/
@@ -209,21 +210,3 @@
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 1000px) {
-    /*Form*/
-    .component-contact form {
-        margin-top: 3%;
-    }
-
-    /*Button*/
-    .component-contact button {
-        padding: 1% 2%;
-        font-size: 1rem;
-        border-radius: 5px;
-    }
-    
-    /*Div Button*/
-    .contact-button {
-        margin-bottom: 5%;
-    }
-}

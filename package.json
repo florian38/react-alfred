@@ -1,6 +1,6 @@
 {
-  "homepage": "https://florian38.github.io/react-alfred",
   "name": "alfred",
+  "homepage": "http://monalfred.fr/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

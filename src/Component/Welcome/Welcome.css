@@ -1,251 +1,221 @@
 /***Component Welcome***/
 .component-welcome{
     flex: 1;
-    position: relative;
+    display: flex;
+}
+
+
+/***Content welcome***/
+.welcome-content{
+    flex: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /*Title*/
-.component-welcome h1{
-    position: absolute;
-    top: 1%;
-    width: 40%;
-    left: 52%;
+.welcome-content h1{
+    width: 80%;
+    text-align: center;
     font-family: 'Caveat';
     font-size: 4rem;
-    text-align: center;
     -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/*Paragraph*/
-.component-welcome p{
-    position: absolute;
-    top: 72%;
-    left: 60%;
+/*Paragraphe*/
+.welcome-content p{
     font-family: 'Montserrat';
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
+    margin: 2% 0;
 }
 
-/*Background img*/
-.welcome-background{
-    position: absolute;
-    top: 50%;
-    left: 2%;
-    transform: translate(0%, -52%);
-    /*width: 900px;*/
-    width: 50%;
-}
-
+/*Phone*/
 .welcome-background3{
-    position: absolute;
-    bottom: 25%;
-    left: 62%;
-    height: 400px;
+    width: 20%;
+    -webkit-animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+/*Img app*/
+.welcome-later{
+    width: 50%;
+    margin-bottom: 5%;
+    -webkit-animation: scale-in-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/*Background*/
 .welcome-background4{
     display: none;
 }
 
-/*App*/
-.welcome-content {
-    position: absolute;
+.welcome-background5{
+    display: none;
+}
+
+/*****Img*****/
+.welcome-img{
+    position: relative;
+    width: 50%;
     display: flex;
-    justify-content: center;
-    top: 85%;
-    left: 58%;
-    width: 30%;
-    gap: 10%;
+    flex-direction: column;
+    -webkit-animation: scale-in-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/*Img*/
-.welcome-content img{
-    width: 150px;
-}
-
-.welcome-later{
-    width: 75% !important;
+.welcome-background{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    left: 5%;
 }
 
 
 /*****Mobile view******/
 @media only screen and (max-width: 1600px) {
+
     /*Title component*/
     .component-welcome h1{
-        font-size: 3.5rem;
-        width: 45%;
+        font-size: 3rem;
     }
     
-    /*Paragraph*/
-    .component-welcome p{
-        position: absolute;
-        top: 75%;
-        left: 56%;
-        font-family: 'Montserrat';
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    /*App*/
-    .welcome-content {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        top: 85%;
-        left: 57%;
-        width: 40%;
-        gap: 10%;
-    }
-
     /*Img*/
     .welcome-background3{
-        position: absolute;
-        bottom: 30%;
-        left: 60%;
-        height: 400px;
+        width: 25%;
+    }
+
+    /*Img app*/
+    .welcome-later{
+        width: 60%;
+        margin-bottom: 5%;
     }
     
+    .welcome-background{
+        position: absolute;
+        width: 110%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        left: 5%;
+    }
 }
 
 
 @media only screen and (max-width: 1200px) {
 
-    /*Img*/
-    .welcome-background3{
-        position: absolute;
-        bottom: 22%;
-        left: 56%;
-        height: 450px;
-    }
-
-    /*Paragraph*/
-    .component-welcome p{
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-        font-family: 'Montserrat';
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    /*App*/
+    /*Div content*/
     .welcome-content {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-        width: 30%;
-        gap: 10%;
+        width: 60% ;
     }
-    
+
+    /*Img app*/
     .welcome-later{
-        width: 100% !important;
+        width: 70%;
+        margin-bottom: 5%;
     }
     
 }
 
 @media only screen and (max-width: 1000px) {
-    /*Title component*/
-    .component-welcome h1{
-        font-size: 3.5rem;
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        width: 60%;
-        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-        -webkit-animation: scale-in-center-title 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: scale-in-center-title 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    /***component welcome***/
+    .component-welcome {
+        flex-direction: column;
+        position: relative;
     }
 
-    /*Background img*/
-    .welcome-background{
-        position: absolute;
-        bottom: 0%;
-        left: -15%;
-        width: 40%;
+    /*Title*/
+    .component-welcome h1{
+        width: 55%;
+    }
+
+    /*Div img*/
+    .welcome-img{
+        display: none ;
+    }
+
+    /*Div content*/
+    .welcome-content {
+        width: 100%;
     }
 
     /*Img*/
     .welcome-background3{
-        position: absolute;
-        bottom: 0%;
-        left: 50%; /* à 50%/50% du parent référent */
-        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-        height: 50%;
+        width: 20%;
     }
 
     /*Paragraph*/
-    .component-welcome p{
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        width: 100%;
-        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-        font-family: 'Montserrat';
-        font-size: 1rem;
-        text-align: center;
+    .welcome-content p{
+        margin-top: 5%;
     }
 
-    /*App*/
-    .welcome-content {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-        width: 60%;
-        gap: 10%;
-    }
-
+    /*Img app*/
     .welcome-later{
-        width: 70% !important;
+        width: 50%;
+        margin: 5% 0;
     }
-    
 
-    /*Img background*/
+    /*Background*/
     .welcome-background4{
         display: block;
+        width: 40%;
         position: absolute;
-        width: 20%;
-        top: 5%;
-        right: -5%;
+        top: 15%;
+        left: -20%;
     }
+    
+    .welcome-background5{
+        display: block;
+        width: 40%;
+        position: absolute;
+        top: 35%;
+        right: -20%;
+    }
+    
     
 }
 
-@media only screen and (max-width: 650px) {
-    /*Title component*/
-    .component-welcome h1{
-        font-size: 2.5rem;
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        width: 60%;
-        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+@media only screen and (max-width: 750px) {
+    /*Paragraph*/
+    .welcome-content p{
+        margin: 10% 0 2%;
     }
 
-    /*Img background*/
-    .welcome-background3{
-        position: absolute;
-        bottom: 5%;
-        left: 50%; /* à 50%/50% du parent référent */
-        transform: translate(-50%, -40%); /* décalage de 50% de sa propre taille */
-        height: 50%;
+    /*Img app*/
+    .welcome-later{
+        width: 60%;
+        margin: 5% 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    /*Title*/
+    .component-welcome h1{
+        width: 80%;
+        font-size: 3rem;
     }
 
     /*Paragraph*/
-    .component-welcome p{
-        font-size: 1rem;
+    .welcome-content p{
+        margin: 10% 4% 2%;
     }
-    
-    /*App*/
-    .welcome-content {
-        width: 100%;
+
+    /*Background*/
+    .welcome-background3{
+        margin-top: 2%;
+        width: 30%;
+    }
+
+    .welcome-background4{
+        display: block;
+        width: 40%;
+        position: absolute;
+        top: 20%;
+        left: -20%;
     }
 }
 
@@ -253,17 +223,13 @@
 
     /*Paragraph*/
     .component-welcome p{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     
-    /*App*/
-    .welcome-content {
-        width: 100%;
-    }
-
-    /*Img*/
-    .welcome-content img {
-        width: 100px;
+    /*Img app*/
+    .welcome-later{
+        width: 70%;
+        margin: 7% 0;
     }
 }
 
@@ -271,106 +237,26 @@
     /*Title component*/
     .component-welcome h1{
         font-size: 2rem;
+        width: 70%;
     }
 
     /*Paragraph*/
     .component-welcome p{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     
-    /*App*/
-    .welcome-content {
-        width: 100%;
-    }
-
-    /*Img*/
-    .welcome-content img {
-        width: 100px;
+    /*Img app*/
+    .welcome-later{
+        width: 70%;
+        margin: 3% 0;
     }
 }
 
+/*
 @media screen and (orientation: landscape) and (max-width: 1200px) {
-    /*Img*/
-    .welcome-background3{
-        position: absolute;
-        bottom: 22%;
-        left: 60%;
-        height: calc(60%);
-    }
-
-    /*Paragraph*/
-    .component-welcome p{
-        position: absolute;
-        top: 75%;
-        left: 55%;
-        transform: translate(0, 0); /* décalage de 50% de sa propre taille */
-        font-family: 'Montserrat';
-        font-size: 1rem;
-        text-align: center;
-    }
     
-    /*App*/
-    .welcome-content {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        top: 90%;
-        left: 76%;
-        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-        width: 30%;
-        gap: 10%;
-    }
-
-  }
 
 
-  @media screen and (orientation: landscape) and (max-width: 1000px) {
-    /*Background img*/
-    .welcome-background{
-        position: absolute;
-        bottom: 0%;
-        left: -15%;
-        width: 25%;
-    }
-
-    /*Title*/
-    .component-welcome h1 {
-        font-size: 2rem;
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        width: 60%;
-        transform: translate(-50%, -50%);
-    }
-
-    /*Img*/
-    .welcome-background3 {
-        display: none;
-    }
-
-    /*Paragraph*/
-    .component-welcome p {
-        position: absolute;
-        font-size: 0.8rem !important;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'Montserrat';
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    /*Content App*/
-    .welcome-content {
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    /*Img App*/
-    .welcome-later {
-        width: 90% !important;
-    }
-
-  }
+}*/
 
 

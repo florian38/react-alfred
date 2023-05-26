@@ -254,8 +254,8 @@
 
     /*Img*/
     .concept-img{
-        height: 30vh;
-        width: 60%;
+        height: 300px;
+        width: 75%;
     }
  
     /*Content*/
@@ -270,7 +270,7 @@
     
     /*Img*/
     .concept-img{
-        height: 30vh;
+        height: 40vh;
         width: 75%;
     }
 
@@ -323,11 +323,13 @@
     /*Title component*/
     .component-concept h1 {
         font-size: 2.5rem;
+        margin: 2% 1% 5%;
     }
     
     /*Slogan component*/
     .concept-slogan {
         font-size: 0.8rem;
+        margin: 0 5%;
     }
 
     /*Div concept text*/
@@ -366,10 +368,6 @@
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 1000px) {
-    /*Img*/
-    .concept-img {
-        height: 70vh;
-        width: 75%;
-    }
-}
+
+
+

@@ -31,7 +31,6 @@
     white-space: nowrap;
     -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
 }
 
 /*Link*/
@@ -89,14 +88,13 @@
     .navbar-right{
         width: 80%;
     }
-
     
 }
 
 @media only screen and (max-width: 1000px) {
     /*Component*/
     .component-navbar{
-        padding: 5% 10%;
+        padding: 3% 10% 2%;
         position: relative;
         overflow: visible;
     }
@@ -164,33 +162,34 @@
     /*Navbar left*/
     .navbar-left {
         display: flex;
-        width: 80px;
+        width: 20%;
     }
 }
 
+/*
 @media screen and (orientation: landscape) and (max-width: 1000px) {
-    /*Left navbar*/
+
     .navbar-left {
         display: flex;
-        width: 50px;
+        width: 10%;
     }
 
-    /*Div in hamburger*/
+
     .hamburger-react > div{
         width: 30px !important;
     }
 
-    /*Mobile*/
+
     .navbar-mobile {
         height: 90vh;
     }
 
-    /*Link*/
+
     .navbar-mobile a {
         font-size: 1.2rem;
     }
 }
-
+*/
 
 
   /**

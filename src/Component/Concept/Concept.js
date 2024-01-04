@@ -13,16 +13,42 @@ import './Concept.css'
 import imgOne from '../../Data/img/stepone.jpg'
 import imgTwo from '../../Data/img/steptwo.jpg'
 import biker from '../../Data/img/biker.jpg'
-
+import { motion } from 'framer-motion';
 
 export default function Concept() {
 
     return (
-        <div className='component-concept'>
+        <motion.div 
+            className='component-concept'
+            initial={{
+                opacity: 0,
+                y: 50,
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                duration: 1,
+                delay: 0.4,
+                },
+            }}>
             <h1>Alfred, comment ça marche ? </h1>
             <p className='concept-slogan'><RiDoubleQuotesR size={20} fill={'#38B6FF'}/>Je suis la pour te faire gagner du temps et de l'argent !<RiDoubleQuotesR size={20} fill={'#38B6FF'}/></p>
             
-            <div className='concept-div concept-mobile'>
+            <motion.div 
+                className='concept-div concept-mobile'
+                initial={{
+                    opacity: 0,
+                    y: 50,
+                }}
+                whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                    duration: 1,
+                    delay: 0.4,
+                    },
+                }}>
 
                 <div className='concept-img  fade-in-target'  style={{backgroundImage: `url(${imgOne})` }}>
                     <div className='concept-cit'><RiDoubleQuotesR size={20} fill={'#38B6FF'}/>C'est le savoir faire qui compte.<RiDoubleQuotesR size={20} fill={'#38B6FF'}/></div>
@@ -38,9 +64,22 @@ export default function Concept() {
                         <p><AiFillCheckCircle size={20} fill={'#38B6FF'}/>Et nous arrivons instantanément !</p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className='concept-div'>
+            <motion.div 
+                className='concept-div'
+                initial={{
+                    opacity: 0,
+                    y: 50,
+                }}
+                whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                    duration: 1,
+                    delay: 0.4,
+                    },
+                }}>
 
                 <div className='concept-content'>
                     <p className='concept-step'>2ème étape</p>
@@ -54,9 +93,22 @@ export default function Concept() {
                 </div>
 
             
-            </div>
+            </motion.div>
 
-            <div className='concept-div concept-mobile'>
+            <motion.div 
+                className='concept-div concept-mobile'
+                initial={{
+                    opacity: 0,
+                    y: 50,
+                }}
+                whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                    duration: 1,
+                    delay: 0.4,
+                    },
+                }}>
 
                 <div className='concept-img  fade-in-target' style={{backgroundImage: `url(${imgTwo})` }}>
                     <div className='concept-cit'><RiDoubleQuotesR size={20} fill={'#38B6FF'}/>La qualité, notre priorité.<RiDoubleQuotesR size={20} fill={'#38B6FF'}/></div>
@@ -73,7 +125,7 @@ export default function Concept() {
                 </div>
 
 
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
   )
 }

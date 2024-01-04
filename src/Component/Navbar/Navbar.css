@@ -29,12 +29,11 @@
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
 /*Link*/
-.navbar-right a{
+.navbar-right p{
     padding: 5%;
     cursor: pointer;
     font-size: 1.3rem;
@@ -43,7 +42,7 @@
     letter-spacing: 0.1rem;
 }
 
-.navbar-right a:after {
+.navbar-right p:after {
     border-bottom: 1px solid #38B6FF;
     content: "";
     display: block;
@@ -52,7 +51,7 @@
     width: 0;
 }
 
-.navbar-right a:hover:after {
+.navbar-right p:hover:after {
     transition: width 100ms ease-in-out 0s;
     width: 100%;
 }
@@ -141,14 +140,14 @@
     }
     
     /*Link mobile*/
-    .navbar-mobile a{
+    .navbar-mobile p{
         color: white;
         font-size: 2rem;
         font-family: 'Montserrat';
         cursor: pointer;
     }
 
-    .navbar-mobile a:hover{
+    .navbar-mobile p:hover{
         color: #38B6FF;
     }
 }
@@ -166,91 +165,5 @@
     }
 }
 
-/*
-@media screen and (orientation: landscape) and (max-width: 1000px) {
-
-    .navbar-left {
-        display: flex;
-        width: 10%;
-    }
 
 
-    .hamburger-react > div{
-        width: 30px !important;
-    }
-
-
-    .navbar-mobile {
-        height: 90vh;
-    }
-
-
-    .navbar-mobile a {
-        font-size: 1.2rem;
-    }
-}
-*/
-
-
-  /**
- * ----------------------------------------
- * animation scale-in-center
- * ----------------------------------------
- */
-@-webkit-keyframes scale-in-center {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
-  }
-  @keyframes scale-in-center {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
-  }
-  
-
-  
-/**
- * ----------------------------------------
- * animation slide-in-top
- * ----------------------------------------
- */
-@-webkit-keyframes slide-in-top {
-    0% {
-      -webkit-transform: translateY(-1000px);
-              transform: translateY(-1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes slide-in-top {
-    0% {
-      -webkit-transform: translateY(-1000px);
-              transform: translateY(-1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  

@@ -16,7 +16,7 @@ export default function Footer() {
     return (
         <div className='component-footer' id="section1" >
             <div>
-                <img src={logo}/>
+                <img src={logo} alt='logo'/>
             </div>
 
             <div>

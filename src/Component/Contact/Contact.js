@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 
 //Import style
 import './Contact.css'
+import { motion } from 'framer-motion';
 
 //Import icon
 import { RiDoubleQuotesR } from 'react-icons/ri';
@@ -47,7 +48,20 @@ export default function Contact() {
     
 
     return (
-        <div className='component-contact'>
+        <motion.div 
+            className='component-contact'
+            initial={{
+                opacity: 0,
+                y: 50,
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                duration: 1,
+                delay: 0.1,
+                },
+            }}>
             <h1>Contactez nous</h1>
             <p className='concept-slogan'><RiDoubleQuotesR size={20} fill={'#38B6FF'}/>Pour toutes autres questions, n'hésite pas à me contacter !<RiDoubleQuotesR size={20} fill={'#38B6FF'}/></p>
             <form ref={form} onSubmit={sendEmail}>
@@ -70,6 +84,6 @@ export default function Contact() {
                 </div>
                 
             </form>
-        </div>
+        </motion.div>
     )
 }

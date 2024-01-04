@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 
 //Import style
 import './Navbar.css'
+import { motion } from 'framer-motion';
 
 //Import pic
 import logo from '../../Data/img/logo Alfred.png'
@@ -49,32 +50,45 @@ export default function Navbar() {
     };
     
     return (
-        <div className='component-navbar '>
+        <motion.div 
+            className='component-navbar '
+            initial={{
+                opacity: 0,
+                y: -50,
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                duration: 1,
+                delay: 0.1,
+                },
+            }}>
 
             <div className='navbar-mobile' style={{display: `${isOpen ?'flex' : 'none'}`}}>
-                <a>Accueil</a>
-                <a onClick={() => handleScroll('#concept')}>Concept</a>
-                <a onClick={() => handleScroll('#work')}>Nous suivre</a>
-                <a onClick={() => handleScroll('#contact')}>Contact</a>
+                <p>Accueil</p>
+                <p onClick={() => handleScroll('#concept')}>Concept</p>
+                <p onClick={() => handleScroll('#work')}>Nous suivre</p>
+                <p onClick={() => handleScroll('#contact')}>Contact</p>
             </div>
 
             <div className='navbar-left'>
-                <img src={logo}/>
+                <img src={logo} alt='logo'/>
             </div>
 
             <div className='navbar-right'>
-                <div><a>Accueil</a></div>
-                <div><a onClick={() => handleScroll('#concept')}>Concept</a></div>
-                <div><a onClick={() => handleScroll('#work')}>Nous suivre</a></div>
-                <div><a onClick={() => handleScroll('#contact')}>Contact</a></div>
+                <div><p>Accueil</p></div>
+                <div><p onClick={() => handleScroll('#concept')}>Concept</p></div>
+                <div><p onClick={() => handleScroll('#work')}>Nous suivre</p></div>
+                <div><p onClick={() => handleScroll('#contact')}>Contact</p></div>
             </div>
 
             <div className='navbar-hamburger' style={{color : `${isOpen ? 'white' : 'black' }`}}>
                 <Hamburger toggled={isOpen} toggle={setOpen} size={40}/>
             </div>
 
-            <img src={background2} className='welcome-background2'></img>
+            <img src={background2} className='welcome-background2' alt='background'></img>
 
-        </div>
+        </motion.div>
     )
 }

@@ -21,8 +21,7 @@
     text-align: center;
     font-family: 'Caveat';
     font-size: 4rem;
-    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
 /*Paragraphe*/
@@ -36,16 +35,12 @@
 /*Phone*/
 .welcome-background3{
     width: 20%;
-    -webkit-animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*Img app*/
 .welcome-later{
     width: 50%;
     margin-bottom: 5%;
-    -webkit-animation: scale-in-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*Background*/
@@ -63,8 +58,7 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    -webkit-animation: scale-in-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
 .welcome-background{
@@ -251,12 +245,4 @@
         margin: 3% 0;
     }
 }
-
-/*
-@media screen and (orientation: landscape) and (max-width: 1200px) {
-    
-
-
-}*/
-
 
